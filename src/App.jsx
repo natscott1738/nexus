@@ -23,7 +23,7 @@ const App = () => {
     return () => obs.disconnect();
   }, []);
   return (
-    <div style={{ background:theme.colors.bg, minHeight:'100vh', color:theme.colors.text }}>
+    <div style={{ background:theme.colors.bg, minHeight:'100vh', color:theme.colors.text, width:'100%', overflowX:'hidden' }}>
       <GlobalStyles />
       <Navbar activeSection={activeSection} />
       <HeroSection />

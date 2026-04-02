@@ -9,8 +9,10 @@ const GlobalStyles = () => {
     style.textContent = `
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
       *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+      html,body,#root{width:100%;max-width:100%;overflow-x:hidden}
       html{scroll-behavior:smooth}
-      body{font-family:'Inter',-apple-system,sans-serif;background:#0A0A0F;color:#E8E8F0;overflow-x:hidden}
+      body{font-family:'Inter',-apple-system,sans-serif;background:#0A0A0F;color:#E8E8F0}
+      section,nav,footer{max-width:100%}
       ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#0A0A0F}::-webkit-scrollbar-thumb{background:#6C63FF44;border-radius:3px}
       ::selection{background:#6C63FF44;color:#fff}
       @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
@@ -24,6 +26,7 @@ const GlobalStyles = () => {
       @keyframes morph{0%,100%{border-radius:42% 56% 72% 28%/42% 42% 56% 48%}33%{border-radius:72% 28% 48% 48%/28% 56% 42% 72%}66%{border-radius:28% 56% 42% 72%/72% 28% 56% 48%}}
       @keyframes ring-pulse{0%{transform:scale(1);opacity:0.3}100%{transform:scale(1.5);opacity:0}}
       @keyframes glow-line{0%{left:-100%}100%{left:200%}}
+      @media(max-width:480px){section{padding-left:16px!important;padding-right:16px!important}}
       @media(max-width:768px){.nav-desktop{display:none!important}.nav-mobile-btn{display:block!important}}
       @media(min-width:769px){.nav-mobile-btn{display:none!important}}
     `;

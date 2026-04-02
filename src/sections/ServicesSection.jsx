@@ -25,11 +25,11 @@ const ServicesSection = () => {
     helix: <DNAHelix width={30} height={55} />, ring: <OrbitingRing size={55} />,
   };
   return (
-    <section id="services" style={{ padding:'120px 24px', position:'relative', background:theme.colors.surface }}>
+    <section id="services" style={{ padding:'120px 24px', position:'relative', background:theme.colors.surface, overflow:'hidden' }}>
       <FloatingOrb color1="#B24BF3" color2="#6C63FF" size={400} bottom="-10%" right="-10%" delay={2} />
       <div style={{ maxWidth:1100, margin:'0 auto', position:'relative', zIndex:2 }}>
         <SectionTitle badge="Services" title="What We Do Best" subtitle="End-to-end digital services designed to help your business thrive in the modern landscape." />
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(320px,1fr))', gap:24 }}>
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(min(100%,320px),1fr))', gap:24 }}>
           {services.map((s,i) => (
             <AnimatedSection key={i} delay={i*0.08}>
               <Card style={{ padding:'36px 28px', height:'100%', display:'flex', flexDirection:'column' }}>

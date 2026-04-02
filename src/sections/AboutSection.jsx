@@ -39,7 +39,7 @@ const AboutSection = () => {
             <p style={{ fontSize:16, color:theme.colors.textMuted, lineHeight:1.8 }}>{tabs[activeTab].desc}</p>
           </Card>
         </AnimatedSection>
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(220px,1fr))', gap:20, marginTop:56 }}>
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(min(100%,220px),1fr))', gap:20, marginTop:56 }}>
           {[
             { icon:'🚀', title:'Fast Delivery', desc:'Agile workflows for rapid, quality results' },
             { icon:'🎨', title:'Design-First', desc:'Beautiful interfaces that users love' },

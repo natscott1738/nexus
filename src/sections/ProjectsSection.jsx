@@ -27,7 +27,7 @@ const ProjectsSection = () => {
   const projectModels = { Web:<RotatingCube size={40}/>, Mobile:<FloatingDiamond size={40}/>, Design:<HolographicSphere size={40}/>, AI:<FloatingPyramid size={36}/> };
 
   return (
-    <section id="projects" style={{ padding:'120px 24px', position:'relative', background:theme.colors.surface }}>
+    <section id="projects" style={{ padding:'120px 24px', position:'relative', background:theme.colors.surface, overflow:'hidden' }}>
       <div style={{ position:'absolute', right:'2%', top:'10%', opacity:0.3 }}>
         <OrbitingRing size={200} />
       </div>
@@ -45,7 +45,7 @@ const ProjectsSection = () => {
             }}>{c}</button>
           ))}
         </div>
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(320px,1fr))', gap:24 }}>
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(min(100%,320px),1fr))', gap:24 }}>
           {filtered.map((p,i) => (
             <AnimatedSection key={p.title} delay={i*0.08}>
               <Card style={{ padding:0, overflow:'hidden' }}>

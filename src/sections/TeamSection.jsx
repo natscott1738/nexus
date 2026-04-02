@@ -29,7 +29,7 @@ const TeamSection = () => {
       </div>
       <div style={{ maxWidth:1000, margin:'0 auto', position:'relative', zIndex:2 }}>
         <SectionTitle badge="Our Team" title="Meet the Creators" subtitle="A talented trio united by a shared passion for building exceptional digital products." />
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))', gap:28 }}>
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(min(100%,280px),1fr))', gap:28 }}>
           {team.map((m,i) => (
             <AnimatedSection key={i} delay={i*0.12}>
               <Card style={{ textAlign:'center', padding:'44px 28px' }}>

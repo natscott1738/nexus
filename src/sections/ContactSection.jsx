@@ -25,14 +25,14 @@ const ContactSection = () => {
     }
   };
   return (
-    <section id="contact" style={{ padding:'120px 24px', position:'relative', background:theme.colors.surface }}>
+    <section id="contact" style={{ padding:'120px 24px', position:'relative', background:theme.colors.surface, overflow:'hidden' }}>
       <FloatingOrb color1="#6C63FF" color2="#00D4AA" size={400} bottom="-10%" left="-10%" delay={1} />
       <div style={{ position:'absolute', right:'3%', bottom:'20%', opacity:0.3 }}>
         <HolographicSphere size={120} />
       </div>
       <div style={{ maxWidth:1100, margin:'0 auto', position:'relative', zIndex:2 }}>
         <SectionTitle badge="Contact" title="Let's Build Together" subtitle="Have a project in mind? We'd love to hear about it. Reach out and let's create something amazing." />
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(300px,1fr))', gap:40 }}>
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(min(100%,300px),1fr))', gap:40 }}>
           <AnimatedSection direction="right">
             <div style={{ display:'flex', flexDirection:'column', gap:32 }}>
               {[

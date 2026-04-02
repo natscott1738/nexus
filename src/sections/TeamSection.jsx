@@ -14,11 +14,13 @@ const TeamSection = () => {
     { name:'Matthew Waweru', role:'CEO & Founder', bio:'Visionary leader driving Nexus\'s mission to deliver world-class digital solutions across Africa and beyond.', color:'#6C63FF', initials:'MW' },
     { name:'Nathan Baraka', role:'Tech Lead', bio:'Full-stack architect with deep expertise in scalable systems, modern frameworks, and technical leadership.', color:'#00D4AA', initials:'NB' },
     { name:'Charles Fortunatius', role:'DevOps Engineer', bio:'Cloud infrastructure specialist ensuring seamless deployments, 99.9% uptime, and peak system performance.', color:'#B24BF3', initials:'CF' },
+    { name:'Joe Osumba', role:'Head of Business development', bio:'Business growth strategist focused on partnerships, market expansion, and long-term client success.', color:'#FF8A3D', initials:'JO' },
   ];
   const memberModels = [
     <HolographicSphere size={44} />,
     <RotatingCube size={36} />,
     <FloatingDiamond size={40} />,
+    <RotatingCube size={32} />,
   ];
 
   return (
